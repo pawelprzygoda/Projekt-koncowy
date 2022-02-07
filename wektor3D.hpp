@@ -54,9 +54,9 @@ public:
 
 	//tworzenie "friend" wektorow aby template spoza ciala klasy mogly korzystac z elementów z Private
 	template <typename T>
-	friend wektor3D<T> operator+(wektor3D<T>& a, const wektor3D<T>& b);
+	friend wektor3D<T> operator+(const wektor3D<T>& a, const wektor3D<T>& b);
 	template <typename T>
-	friend wektor3D<T> operator-(wektor3D<T>& a, const wektor3D<T>& b);
+	friend wektor3D<T> operator-(const wektor3D<T>& a, const wektor3D<T>& b);
 	template <typename T>
 	friend wektor3D<T> operator%(const wektor3D<T>& a, const wektor3D<T>& b);
 
@@ -71,7 +71,7 @@ protected:
 //operatory (dwuargemuntowe) 
 	//suma
 	template <typename T>
-	wektor3D<T> operator+(wektor3D<T>& a, const wektor3D<T>& b)
+	wektor3D<T> operator+(const wektor3D<T>& a, const wektor3D<T>& b)
 	{
 		wektor3D<T> wektor_wyn;
 		wektor_wyn.x = a.x + b.x;
@@ -83,7 +83,7 @@ protected:
 
 	//roznica
 	template <typename T>
-	wektor3D<T> operator-(wektor3D<T>& a, const wektor3D<T>& b)
+	wektor3D<T> operator-(const wektor3D<T>& a, const wektor3D<T>& b)
 	{
 		wektor3D<T> wektor_wyn;
 		wektor_wyn.x = a.x - b.x;
