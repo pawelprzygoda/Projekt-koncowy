@@ -6,12 +6,12 @@ class Wektor
 public:
 	Wektor()
 	{
-		std::cout << "Konstruktor" << std::endl;
+		cout << "Konstruktor wywolany" << endl;
 	}
 
 	virtual ~Wektor()
 	{
-		std::cout << "Destruktor" << std::endl;
+		cout << "Destruktor wywolany" << endl;
 	}
 
 	virtual void print() = 0;
