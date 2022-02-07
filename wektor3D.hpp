@@ -52,7 +52,7 @@ public:
 
 
 
-	//tworzenie "friend" wektorow aby template spoza ciala klasy mogly korzystac z elementów z Private
+	//tworzenie "friend" wektorow aby template spoza ciala klasy mogly korzystac z elementÃ³w z Private
 	template <typename T>
 	friend wektor3D<T> operator+(wektor3D<T>& a, const wektor3D<T>& b);
 	template <typename T>
@@ -68,8 +68,7 @@ protected:
 };
 
 
-//operatory (dwuargemuntowe) poza cialem klasy
-
+//operatory (dwuargemuntowe) 
 	//suma
 	template <typename T>
 	wektor3D<T> operator+(wektor3D<T>& a, const wektor3D<T>& b)
