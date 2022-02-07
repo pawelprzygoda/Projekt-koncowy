@@ -15,9 +15,6 @@ int main()
 	//cout << a.dlugosc() << endl;
 	//cout << (a * b) << endl;
 
-	
-//operatory poza cialem klasy
-
 	a - b;
 	//a + b;
 	//a % b;
